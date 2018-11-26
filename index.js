@@ -5,8 +5,8 @@ const mongoose    = require('mongoose')
 // importar variable de aplicacion
 const app  = require('./app')
 // importar configuraciones
-const config = require('./config') //const port = process.env.PORT || 3001
-
+const config = require('./config') 
+/*
 mongoose.connect(config.db, { useNewUrlParser: true }, (err, res) => {
 	if (err) {
 		console.log(`Error al conectar a la base de datos: ${err}`)
@@ -18,3 +18,4 @@ mongoose.connect(config.db, { useNewUrlParser: true }, (err, res) => {
 	})
 })
 
+*/
