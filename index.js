@@ -6,7 +6,7 @@ const mongoose    = require('mongoose')
 const app  = require('./app')
 // importar configuraciones
 const config = require('./config') 
-/*
+
 mongoose.connect(config.db, { useNewUrlParser: true }, (err, res) => {
 	if (err) {
 		console.log(`Error al conectar a la base de datos: ${err}`)
@@ -18,4 +18,3 @@ mongoose.connect(config.db, { useNewUrlParser: true }, (err, res) => {
 	})
 })
 
-*/
