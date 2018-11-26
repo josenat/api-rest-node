@@ -4,18 +4,18 @@
 const express     = require('express')
 // obtener metodo Router
 const api         = express.Router()
-// importar controlador producto
-const productCtrl = require('../controllers/product')
+// importar el controlador empleado
+const empleadoController = require('../controllers/EmpleadoController')
 
 // method index
-api.get('/product', productCtrl.getProducts)
+api.get('/empleado', empleadoController.getEmpleados)
 // method show
-api.get('/product/:productId', productCtrl.getProduct)
+api.get('/empleado/:empleadoId', empleadoController.getEmpleado)
 // method store
-api.post('/product', productCtrl.saveProduct)
+api.post('/empleado', empleadoController.saveEmpleado)
 // method update
-api.put('/product/:productId', productCtrl.updateProduct)
+api.put('/empleado/:empleadoId', empleadoController.updateEmpleado)
 // method destroy
-api.delete('/product/:productId', productCtrl.deleteProduct)
+api.delete('/empleado/:empleadoId', empleadoController.deleteEmpleado)
 
 module.exports = api

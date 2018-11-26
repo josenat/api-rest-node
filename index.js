@@ -6,15 +6,16 @@ const mongoose    = require('mongoose')
 const app  = require('./app')
 // importar configuraciones
 const config = require('./config') 
-
+// conectar a la base de datos
 mongoose.connect(config.db, { useNewUrlParser: true }, (err, res) => {
 	if (err) {
 		console.log(`Error al conectar a la base de datos: ${err}`)
+		return;
 	}
 	console.log('Conexion exitosa a la base de datos')
 	
 	app.listen(config.port, () => {
-		console.log(`API REST corriendo en http://localhost:${config.port}`)
+		console.log(`API REST ejecutandose en http://localhost:${config.port}`)
 	})
 })
 
